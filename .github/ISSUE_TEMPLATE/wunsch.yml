@@ -1,0 +1,17 @@
+name: Wunsch / Feature request
+description: Idee für eine neue Funktion oder Verbesserung. / Idea for a new feature or improvement.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "**Bitte keine Serveradressen oder Zugangsdaten posten. / Please do not post server addresses or credentials.**"
+  - type: textarea
+    id: wunsch
+    attributes:
+      label: Was wünschst du dir? / What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: warum
+    attributes:
+      label: Wofür brauchst du das? / What is it for?

@@ -1,0 +1,40 @@
+name: Fehler melden / Bug report
+description: Etwas funktioniert nicht wie erwartet. / Something does not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Bitte keine Serveradressen, Benutzernamen, Passwörter oder Tokens posten – Issues sind öffentlich.**
+        **Please do not post server addresses, user names, passwords or tokens – issues are public.**
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Was ist passiert? / What happened?
+      description: Und was hättest du erwartet? / And what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Schritte zum Nachstellen / Steps to reproduce
+  - type: input
+    id: version
+    attributes:
+      label: App-Version (Einstellungen › Version) / App version
+    validations:
+      required: true
+  - type: dropdown
+    id: geraet
+    attributes:
+      label: Gerät / Device
+      multiple: true
+      options: [iPhone, iPad, Apple Watch, CarPlay]
+  - type: input
+    id: system
+    attributes:
+      label: iOS-/watchOS-Version
+  - type: input
+    id: abs
+    attributes:
+      label: Audiobookshelf-Serverversion (falls bekannt) / Server version
